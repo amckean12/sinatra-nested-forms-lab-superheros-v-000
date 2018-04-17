@@ -1,12 +1,12 @@
 class Superhero
-  attr_accessor :name, :weight, :height
+  attr_accessor :name, :power, :bio
 
   SUPERHEROS = []
 
   def initialize(args)
     @name = args[:name]
-    @height = args[:height]
-    @weight = args[:weight]
+    @power = args[:height]
+    @bio = args[:weight]
     SUPERHEROS << self
   end
 
