@@ -3,15 +3,14 @@ class Superhero
 
   SUPERHEROS = []
 
-  def initialize(args)
-    @name = args[:name]
-    @power = args[:power]
-    @bio = args[:bio]
-    SUPERHEROS << self
+  def initialize(opts={})
+    @name = opts[:name]
+    @power = opts[:power]
+    @bio = opts[:bio]
+    self.save
   end
 
-  def self.all
-    SUPERHEROS
-  end
-
+  def save 
+    self.class.all << self
+  end 
 end
