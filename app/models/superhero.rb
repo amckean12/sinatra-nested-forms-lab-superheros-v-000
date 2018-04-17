@@ -5,8 +5,8 @@ class Superhero
 
   def initialize(args)
     @name = args[:name]
-    @power = args[:height]
-    @bio = args[:weight]
+    @power = args[:power]
+    @bio = args[:bio]
     SUPERHEROS << self
   end
 
