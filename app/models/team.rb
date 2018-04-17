@@ -1,4 +1,4 @@
-class Team 
+class Team
 
   attr_accessor :name, :motto
 
@@ -10,5 +10,5 @@ class Team
     @@teams << self
   end
 
-  
-end 
+
+end
