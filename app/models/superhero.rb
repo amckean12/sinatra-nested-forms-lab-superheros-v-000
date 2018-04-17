@@ -1,4 +1,4 @@
-class Superhero
+class SuperHero
   attr_accessor :name, :power, :bio
 
   def self.all
