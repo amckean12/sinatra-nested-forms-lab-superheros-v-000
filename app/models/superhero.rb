@@ -1,4 +1,4 @@
-class Superhero 
+class Superhero
   attr_accessor :name, :weight, :height
 
   SUPERHEROS = []
@@ -9,4 +9,5 @@ class Superhero
     @weight = args[:weight]
     SUPERHEROS << self
   end
-end 
+  
+end
