@@ -9,5 +9,9 @@ class Superhero
     @weight = args[:weight]
     SUPERHEROS << self
   end
-  
+
+  def self.all
+    SUPERHEROS
+  end 
+    
 end
