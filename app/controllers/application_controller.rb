@@ -19,7 +19,7 @@ class App < Sinatra::Base
           super_hero_name = member_params[:name]
           super_hero_power = member_params[:power]
           suepr_hero_bio = member_params[:bio]
-  
+
           SuperHero.new({name: super_hero_name, power: super_hero_power, bio: suepr_hero_bio})
       end
       erb :team
