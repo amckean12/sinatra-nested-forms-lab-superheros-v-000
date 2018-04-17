@@ -1,7 +1,9 @@
 class Superhero
   attr_accessor :name, :power, :bio
 
-  SUPERHEROS = []
+  def self.all
+    @@all ||= []
+  end 
 
   def initialize(opts={})
     @name = opts[:name]
@@ -10,7 +12,7 @@ class Superhero
     self.save
   end
 
-  def save 
+  def save
     self.class.all << self
-  end 
+  end
 end
