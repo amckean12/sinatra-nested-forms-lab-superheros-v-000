@@ -3,7 +3,7 @@ class SuperHero
 
   def self.all
     @@all ||= []
-  end 
+  end
 
   def initialize(opts={})
     @name = opts[:name]
