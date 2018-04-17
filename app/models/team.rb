@@ -9,6 +9,4 @@ class Team
     @motto = args[:motto]
     @@teams << self
   end
-
-
 end
